@@ -1,6 +1,8 @@
+us
 > ⭐ **If this project helped you, leave a star >.<**  
 > 🛠️ **This project will soon support scheduled video publishing.**
-> 
+
+BR
 > ⭐ **Se foi útil para você, deixa uma estrelinha >.<**  
 > 🛠️ **Este projeto ainda receberá a funcionalidade de agendamento de publicação de vídeos.**  
 
