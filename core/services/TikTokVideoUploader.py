@@ -32,9 +32,10 @@ class TikTokVideoUploader(IVideoUploader):
 
         with open(VIDEO_PATH, "rb") as f:
             video_data = f.read()
-
+        content_range = f"bytes 0-{video_size - 1}/{video_size}"
         upload_res = requests.put(upload_url,
-                                  headers={"Content-Type": "video/mp4"},
+                                  headers={"Content-Type": "txt",
+                                           "Content-Range": content_range},
                                   data=video_data)
 
         if upload_res.status_code != 200:
