@@ -25,7 +25,8 @@ Automated flow for OAuth and video upload using TikTok API + Python.
 <p align="center">
   <a href="#-requirements">🔧 Requirements</a> •
   <a href="#-how-to-use">🚀 How to Use</a> •
-  <a href="#-https-callback-ngrok">🌐 HTTPS Callback via ngrok</a>
+  <a href="#-https-callback-ngrok">🌐 HTTPS Callback via ngrok</a> •
+  <a href="#-publishing-features">📤 Publishing Features</a>
 </p>
 
 ---
@@ -95,7 +96,7 @@ CLIENT_KEY=your_key
 CLIENT_SECRET=your_secret
 ```
 
-Woohoo! All set, let’s run it 🚀
+Woohoo! All set, let's run it 🚀
 
 ---
 
@@ -104,6 +105,34 @@ Woohoo! All set, let’s run it 🚀
 ```bash
 pip install -r requirements.txt
 ```
+
+### 3. Configure Publishing (Optional)
+
+Add these optional settings to your `.env` file:
+
+```
+# Optional publishing settings
+DEFAULT_VIDEO_TITLE=My amazing video!
+DEFAULT_PRIVACY_LEVEL=SELF_ONLY
+AUTO_PUBLISH=false
+```
+
+Privacy levels:
+- `SELF_ONLY` = Only me
+- `MUTUAL_FOLLOW_FRIENDS` = Friends
+- `PUBLIC` = Public
+
+---
+
+## 📤 Publishing Features
+
+The project now supports automatic video publishing with these features:
+
+- **Manual Publishing**: Choose whether to publish after upload
+- **Custom Titles**: Set video titles during publishing
+- **Privacy Control**: Choose privacy level (Private, Friends, Public)
+- **Auto Publishing**: Configure automatic publishing in `.env`
+- **Default Settings**: Set default title and privacy in `.env`
 
 </details>
 
@@ -122,7 +151,8 @@ Fluxo automatizado de autenticação OAuth e upload de vídeo usando a API do Ti
 <p align="center">
   <a href="#-requisitos">🔧 Requisitos</a> •
   <a href="#-como-usar">🚀 Como Usar</a> •
-  <a href="#-callback-https-ngrok">🌐 Callback HTTPS com ngrok</a>
+  <a href="#-callback-https-ngrok">🌐 Callback HTTPS com ngrok</a> •
+  <a href="#-funcionalidades-de-publicacao">📤 Funcionalidades de Publicação</a>
 </p>
 
 ---
@@ -201,3 +231,56 @@ Oba! Tudo pronto, bora rodar 🚀
 ```bash
 pip install -r requirements.txt
 ```
+
+### 3. Configurar Publicação (Opcional)
+
+Adicione estas configurações opcionais ao seu arquivo `.env`:
+
+```
+# Configurações opcionais para publicação
+DEFAULT_VIDEO_TITLE=Meu vídeo incrível!
+DEFAULT_PRIVACY_LEVEL=SELF_ONLY
+AUTO_PUBLISH=false
+```
+
+Níveis de privacidade:
+- `SELF_ONLY` = Só eu
+- `MUTUAL_FOLLOW_FRIENDS` = Amigos
+- `PUBLIC` = Público
+
+---
+
+## 📤 Funcionalidades de Publicação
+
+O projeto agora suporta publicação automática de vídeos com estas funcionalidades:
+
+- **Publicação Manual**: Escolha se quer publicar após o upload
+- **Títulos Personalizados**: Defina títulos dos vídeos durante a publicação
+- **Controle de Privacidade**: Escolha nível de privacidade (Privado, Amigos, Público)
+- **Publicação Automática**: Configure publicação automática no `.env`
+- **Configurações Padrão**: Defina título e privacidade padrão no `.env`
+
+### 4. Executar o Projeto
+
+```bash
+python main.py
+```
+
+O programa irá:
+1. 🔐 Abrir o navegador para autenticação OAuth
+2. 📤 Fazer upload do vídeo
+3. ❓ Perguntar se deseja publicar
+4. 📝 Permitir configurar título e privacidade
+5. 🚀 Publicar o vídeo (se escolhido)
+
+---
+
+## 🎯 Exemplo de Uso
+
+1. Configure seu `.env` com as credenciais
+2. Inicie o ngrok: `ngrok http 8080`
+3. Execute: `python main.py`
+4. Autorize no navegador
+5. Escolha se quer publicar
+6. Configure título e privacidade
+7. ✅ Vídeo publicado!

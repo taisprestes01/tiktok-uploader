@@ -5,7 +5,9 @@ from config import CLIENT_KEY, CLIENT_SECRET, REDIRECT_URI
 
 class TikTokAuthorizationService(IAuthorizationService):
     def generate_auth_url(self) -> str:
-        scopes = ['video.upload']
+        scopes = [
+            'video.publish'
+        ]
         params = {
             'client_key': CLIENT_KEY,
             'response_type': 'code',
