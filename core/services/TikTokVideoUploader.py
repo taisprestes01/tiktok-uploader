@@ -38,7 +38,7 @@ class TikTokVideoUploader(IVideoUploader):
                                            "Content-Range": content_range},
                                   data=video_data)
 
-        if upload_res.status_code != 200:
+        if upload_res.status_code not in [200, 201]:
             raise Exception(f"Erro ao enviar vídeo: {upload_res}")
 
         return publish_id
