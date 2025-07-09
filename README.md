@@ -6,7 +6,7 @@
   <br>
   <img src="https://github.com/user-attachments/assets/002aea1c-e08e-41a6-9360-fa760cb2dff5" alt="TikTok Logo" width="120">
   <br>
-  TikTok OAuth & Video Upload
+  TikTok OAuth & Video Upload & Video Publish
   <br>
 </h1> 
 
@@ -133,7 +133,7 @@ The project now supports automatic video publishing with these features:
   <br>
   <img src="https://github.com/user-attachments/assets/002aea1c-e08e-41a6-9360-fa760cb2dff5" alt="TikTok Logo" width="120">
   <br>
-  TikTok OAuth & Upload de Vídeo
+  TikTok OAuth & Upload de Vídeo  & Publicação de Video
   <br>
 </h1> 
 
